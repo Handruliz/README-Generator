@@ -18,36 +18,36 @@ function renderLicenseBadge(license) {
 function generateMarkdown(data) {
     console.log (data)
     return `# ${data.title}
-    ##  Table of Contents
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contribution](#contribution)
-    - [Testing](#testing)
-    - [Additional Info](#additional-info)
+##  Table of Contents
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contribution](#contribution)
+  - [Testing](#testing)
+  - [Additional Info](#additional-info)
     
-    ## Description:
-    ${data.description}
+## Description:
+  ${data.description}
 
-    ## Installation:
-    ${data.installation}
+## Installation:
+  ${data.installation}
 
-    ## Usage:
-    ${data.usage}
+## Usage:
+  ${data.usage}
 
-    ## contribution:
-    ${data.contribution}
+## contribution:
+  ${data.contribution}
 
-    ## Test:
-    ${data.test}
+## Test:
+  ${data.test}
 
-    ## License:
-    -license: ${data.license}
-    - ${renderLicenseBadge(data.license)}
+## License:
+  -license: ${data.license}
+  - ${renderLicenseBadge(data.license)}
 
-    ## Additional information:
-    -Github: [${data.github}](https://github.com/${data.github})
-    -Email: ${data.email}`
+## Additional information:
+  -Github: [${data.github}](https://github.com/${data.github})
+  -Email: ${data.email}`
 };
 
 
